@@ -1,0 +1,405 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Barlow Condensed", sans-serif;
+}
+html,
+body {
+  overflow: hidden;
+}
+
+.font-barlow {
+  font-family: "Barlow", sans-serif;
+}
+
+.font-bellefair {
+  font-family: "Bellefair", serif;
+}
+
+.color-bluewhite {
+  color: #d0d6f9;
+}
+
+.padd {
+  padding: 0 60px;
+}
+
+@media (min-width: 1024px) {
+  .paddtop {
+    padding: 20px 0;
+  }
+
+  .padd2 {
+    padding-top: 180px;
+  }
+
+  .marg {
+    margin-top: 60px;
+  }
+
+  .paddl {
+    padding-left: 150px;
+  }
+
+  .marl {
+    padding-left: 8em;
+    padding-top: 2em;
+  }
+
+  .marl-big {
+    padding-left: 6em;
+    padding-top: 2em;
+  }
+
+  /*CREW*/
+
+  .marr-to {
+    margin-top: 50px;
+  }
+
+  .crew-top {
+    margin-top: 100px;
+  }
+
+  .cm-top {
+    margin-top: 10px;
+  }
+
+  .bio-top {
+    margin-top: 30px;
+  }
+
+  .im-abs {
+    padding-top: 30px;
+  }
+
+  .all-pad {
+    padding: 0 180px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .padddd {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .ipad-pro-flex {
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 200px;
+    gap: 80px;
+  }
+
+  .crew-top {
+    margin-top: -100px;
+  }
+
+  .marr-to {
+    margin-top: 80px;
+  }
+
+  .cm-top {
+    margin-top: 10px;
+  }
+
+  .bio-top {
+    margin-top: 30px;
+  }
+
+  .im-abs {
+    padding-top: 20px;
+  }
+
+  .dot {
+    top: 1000px;
+    left: 480px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .padd {
+    padding: 0 30px;
+  }
+
+  .paddtop {
+    padding: 10px 0;
+  }
+
+  .marl {
+    padding-left: 4em;
+    padding-bottom: 4em;
+    gap: 25px;
+    font-size: 20px;
+  }
+
+  .marl-big {
+    padding-left: 6em;
+    padding-top: 2.5em;
+  }
+
+  /*CREW*/
+
+  .crew-top {
+    margin-top: -70px;
+    margin-left: 60px;
+  }
+
+  .marr-to {
+    margin-top: 80px;
+  }
+
+  .cm-top {
+    margin-top: 10px;
+  }
+
+  .bio-top {
+    margin-top: 30px;
+  }
+
+  .im-abs {
+    padding-top: 30px;
+  }
+
+  /*TECH*/
+  .ma-left {
+    margin-left: 50px;
+  }
+
+  .te-size {
+    margin-top: 30px;
+  }
+
+  .padd-tech {
+    padding: 0 0;
+  }
+}
+
+.imgg-home {
+  background-image: url(assets/home/background-home-desktop.jpg);
+}
+
+.img-dest {
+  background-image: url(assets/destination/background-destination-desktop.jpg);
+}
+
+.img-tech {
+  background-image: url(assets/technology/background-technology-desktop.jpg);
+}
+
+@media (max-width: 767px) {
+  .padd {
+    padding: 0 20px;
+  }
+  .padd-tech {
+    padding: 0 20px;
+  }
+
+  .imgg-home {
+    background-image: url(assets/home/background-home-mobile.jpg);
+  }
+
+  .img-dest {
+    background-image: url(assets/destination/background-destination-mobile.jpg);
+  }
+
+  .img-tech {
+    background-image: url(assets/technology/background-technology-mobile.jpg);
+  }
+
+  .pad-small {
+    padding: 0 25px;
+  }
+
+  .padder {
+    padding-bottom: 20px 0;
+  }
+
+  .margb {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  /*CREW*/
+
+  .marr-to {
+    margin-top: 80px;
+  }
+
+  .crew-top {
+    margin-top: 3rem;
+  }
+
+  .cm-top {
+    margin-top: 10px;
+  }
+
+  .bio-top {
+    margin-top: 30px;
+  }
+
+  .im-abs {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 411px) {
+  .img-smaller {
+    width: 110px;
+    height: 110px;
+  }
+
+  .gapp {
+    gap: 4px;
+  }
+
+  .gappp {
+    gap: 8px;
+  }
+
+  .moon-text {
+    font-size: 40px;
+  }
+
+  .des-text {
+    font-size: 12px;
+    max-width: 280px;
+  }
+
+  .pick {
+    font-size: 15px;
+  }
+
+  .text-small {
+    font-size: 18px;
+  }
+
+  .margt {
+    margin-top: 10px;
+  }
+
+  /*CREW*/
+
+  .marr-to {
+    margin-top: 20px;
+  }
+
+  .crew-top {
+    margin-top: 4rem;
+  }
+
+  .cm-top {
+    margin-top: 5px;
+  }
+
+  .bio-top {
+    margin-top: 15px;
+  }
+
+  .te-si {
+    font-size: 14px;
+  }
+  .te-sizee {
+    font-size: 18px;
+  }
+
+  .te-siz {
+    font-size: 12px;
+    max-width: 300px;
+  }
+
+  .im-abs {
+    padding-top: 10px;
+  }
+
+  /*TECH*/
+
+  .te-size {
+    font-size: 12px;
+  }
+
+  .img-height {
+    height: 180px;
+  }
+}
+
+@media (min-width: 539px) and (max-width: 540px) {
+  .img-smaller {
+    width: 130px;
+    height: 130px;
+  }
+
+  .gapp {
+    gap: 7px;
+  }
+
+  .gappp {
+    gap: 10px;
+  }
+
+  .moon-text {
+    font-size: 50px;
+  }
+
+  .des-text {
+    font-size: 13px;
+    max-width: 330px;
+  }
+
+  .pick {
+    font-size: 16px;
+  }
+
+  .text-small {
+    font-size: 20px;
+  }
+
+  .margt {
+    margin-top: 12px;
+  }
+
+  .fle-ro {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+  }
+
+  /*TECH*/
+
+  .te-size {
+    font-size: 12px;
+  }
+
+  .img-height {
+    height: 240px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .paddetop {
+    padding: 20px 0;
+  }
+
+  .imgg-home {
+    background-image: url(assets/home/background-home-tablet.jpg);
+  }
+
+  .img-dest {
+    background-image: url(assets/destination/background-destination-tablet.jpg);
+  }
+
+  .img-tech {
+    background-image: url(assets/technology/background-technology-tablet.jpg);
+  }
+}
