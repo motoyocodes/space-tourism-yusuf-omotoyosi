@@ -98,7 +98,7 @@ function Technology() {
             <p
               className="text-lg padd-tech te-size text-[#D0D6F9]
             font-barlow font-light md:max-w-3xl lg:max-w-md
-            lg:text-sm md:text-red-600 lg:text-amber-700
+            lg:text-sm
             "
             >
               {tech.description}
