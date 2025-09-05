@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { iconHamburger, logo } from "../../assets/shared";
+import { iconHamburger, logo, iconClose } from "../../assets/shared";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import { useState } from "react";
 
@@ -78,58 +78,64 @@ export default function Navbar() {
 
             {/* Mobile Menu Overlay */}
             {ismenmuToggled && (
-              <div className="fixed right-0 top-0 h-full w-64 bg-white/10 backdrop-blur-md flex flex-col items-start p-8 space-y-6 text-white tracking-widest">
-                <button
-                  className="self-end text-xl cursor-pointer"
-                  onClick={() => setIsMenuToggled(false)}
-                >
-                  ✕
-                </button>
+              <div
+                className="fixed right-0 top-0 h-full 
+              padd w-60 bg-white/10 backdrop-blur-md flex flex-col 
+              items-start  text-white tracking-widest"
+              >
+                <img
+                  src={iconClose}
+                  alt="icon-close button"
+                  className="self-end text-2xl font-bold pad-icon-close
+                   cursor-pointer"
+                />
 
                 {/* Mobile Links */}
-                <Link
-                  to="/"
-                  className="flex gap-3"
-                  activeProps={{
-                    className: "border-b-2 border-white", // underline when active
-                  }}
-                  onClick={() => setIsMenuToggled(false)}
-                >
-                  <span className="font-bold">00</span> HOME
-                </Link>
+                <div className="flex flex-col gap-6 ma-left">
+                  <Link
+                    to="/"
+                    className="flex gap-3"
+                    activeProps={{
+                      className: "border-b-2 border-white", // underline when active
+                    }}
+                    onClick={() => setIsMenuToggled(false)}
+                  >
+                    <span className="font-bold">00</span> HOME
+                  </Link>
 
-                <Link
-                  to="/destination"
-                  className="flex gap-3"
-                  activeProps={{
-                    className: "border-b-2 border-white", // underline when active
-                  }}
-                  onClick={() => setIsMenuToggled(false)}
-                >
-                  <span className="font-bold">01</span> DESTINATION
-                </Link>
+                  <Link
+                    to="/destination"
+                    className="flex gap-3"
+                    activeProps={{
+                      className: "border-b-2 border-white", // underline when active
+                    }}
+                    onClick={() => setIsMenuToggled(false)}
+                  >
+                    <span className="font-bold">01</span> DESTINATION
+                  </Link>
 
-                <Link
-                  to="/crew"
-                  className="flex gap-3"
-                  activeProps={{
-                    className: "border-b-2 border-white", // underline when active
-                  }}
-                  onClick={() => setIsMenuToggled(false)}
-                >
-                  <span className="font-bold">02</span> CREW
-                </Link>
+                  <Link
+                    to="/crew"
+                    className="flex gap-3"
+                    activeProps={{
+                      className: "border-b-2 border-white", // underline when active
+                    }}
+                    onClick={() => setIsMenuToggled(false)}
+                  >
+                    <span className="font-bold">02</span> CREW
+                  </Link>
 
-                <Link
-                  to="/technology"
-                  className="flex gap-3"
-                  activeProps={{
-                    className: "border-b-2 border-white", // underline when active
-                  }}
-                  onClick={() => setIsMenuToggled(false)}
-                >
-                  <span className="font-bold">03</span> TECHNOLOGY
-                </Link>
+                  <Link
+                    to="/technology"
+                    className="flex gap-3"
+                    activeProps={{
+                      className: "border-b-2 border-white", // underline when active
+                    }}
+                    onClick={() => setIsMenuToggled(false)}
+                  >
+                    <span className="font-bold">03</span> TECHNOLOGY
+                  </Link>
+                </div>
               </div>
             )}
           </>

@@ -60,6 +60,10 @@ body {
     padding-top: 2em;
   }
 
+  .pad-desktp {
+    padding-left: 70px;
+  }
+
   /*CREW*/
 
   .marr-to {
@@ -84,6 +88,14 @@ body {
 
   .all-pad {
     padding: 0 180px;
+  }
+
+  .padd-tech {
+    padding: 18px 0;
+  }
+
+  .top-mar {
+    margin-top: 90px;
   }
 }
 
@@ -174,6 +186,7 @@ body {
   /*TECH*/
   .ma-left {
     margin-left: 50px;
+    margin-top: 80px;
   }
 
   .te-size {
@@ -182,6 +195,10 @@ body {
 
   .padd-tech {
     padding: 0 0;
+  }
+
+  .gappp {
+    gap: 8px;
   }
 }
 
@@ -225,6 +242,12 @@ body {
     padding-bottom: 20px 0;
   }
 
+  .pad-icon-close {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-right: 6px;
+  }
+
   .margb {
     margin-bottom: 30px;
     margin-top: 30px;
@@ -250,6 +273,10 @@ body {
 
   .im-abs {
     padding-top: 50px;
+  }
+
+  .ma-left {
+    margin-left: 10px;
   }
 }
 
@@ -325,11 +352,16 @@ body {
   /*TECH*/
 
   .te-size {
-    font-size: 12px;
+    font-size: 8px;
   }
 
-  .img-height {
-    height: 180px;
+  .ma-height {
+    max-height: 260px;
+  }
+
+  .roun-btn {
+    width: 30px;
+    height: 30px;
   }
 }
 

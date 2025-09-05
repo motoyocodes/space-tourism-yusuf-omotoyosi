@@ -44,30 +44,35 @@ function Technology() {
   return (
     <main
       className="min-h-screen w-full flex flex-col items-center
-       text-white p-6 bg-cover img-tech  bg-no-repeat justify-evenly"
+       text-white p-6 bg-cover img-tech pad-desktp bg-no-repeat justify-evenly"
     >
       <h1
         className="uppercase tracking-widest font-light text-2xl te-sizee bio-top gap-5 
-             text-center md:text-left self-center md:self-start
-             ma-left flex"
+             text-center md:text-left top-mar self-center md:self-start
+             ma-left flex "
       >
         <span className="font-normal text-gray-500">03</span> Space launch 101
       </h1>
 
       {/* Tech content */}
       <div
-        className="flex flex-col-reverse lg:flex-row w-full items-center
-       gap-12"
+        className="flex flex-col-reverse lg:flex-row w-full
+         items-center gap-12 lg:"
       >
         {/* Left: Text + Tabs */}
-        <div className="flex flex-col lg:flex-row  items-center lg:items-start gap-8">
+        <div
+          className="flex flex-col lg:flex-row items-center
+         lg:items-start gap-8  "
+        >
           {/* Tabs */}
           <div className="flex lg:flex-col gap-4">
             {technologies.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setActiveIndex(index)}
-                className={`w-12 h-12 rounded-full border border-white/50 flex items-center justify-center text-lg font-bold 
+                className={`w-12 h-12 roun-btn rounded-full 
+                  border border-white/50 flex items-center
+                   justify-center text-lg font-bold 
                   ${activeIndex === index ? "bg-white text-black" : "text-white"}`}
               >
                 {index + 1}
@@ -79,19 +84,21 @@ function Technology() {
           <div className="max-w-xl text-center lg:text-left">
             <p
               className="uppercase text-md font-bellefair 
-            text-gray-500 md:text-3xl font-normal te-size"
+            text-gray-500 md:text-3xl font-normal te-size
+             lg:text-2xl"
             >
               The terminology…
             </p>
             <h2
-              className="text-xl font-bellefair md:text-5xl cm-top uppercase 
+              className="text-xl font-bellefair md:text-4xl lg:text-5xl cm-top uppercase 
             "
             >
               {tech.name}
             </h2>
             <p
               className="text-lg padd-tech te-size text-[#D0D6F9]
-            font-barlow font-light md:max-w-3xl
+            font-barlow font-light md:max-w-3xl lg:max-w-md
+            lg:text-sm md:text-red-600 lg:text-amber-700
             "
             >
               {tech.description}
@@ -99,16 +106,18 @@ function Technology() {
           </div>
         </div>
 
-        <picture>
+        <picture className="w-full flex-1">
           {/* Desktop portrait */}
           <source srcSet={tech.portrait} media="(min-width:1024px)" />
-          {/* tablet portrait */}
-          <source srcSet={tech.landscape} media="(min-width:768px)" />
-          {/* Mobile/tablet landscape */}
+          {/* Tablet landscape */}
+          <source srcSet={tech.portrait} media="(min-width:768px)" />
+          {/* Mobile fallback */}
           <img
-            src={tech.landscape}
+            src={tech.portrait}
             alt={tech.name}
-            className="w-full h-full md:h-[357px] object-cover"
+            className="w-full h-auto ma-height max-h-[280px] 
+            md:max-h-[360px] lg:max-h-[450px] object-fill 
+            md:object-cover lg:object-cover lg:max-w-[900px] lg:absolute lg:right-0 lg:top-90 "
           />
         </picture>
       </div>
